@@ -160,7 +160,7 @@ article.networks{
     grid-row: 2;
 }
 
-/*Structural borders*/
+/*Structural borders
 article{
     border:1px solid purple;
 }
@@ -169,7 +169,7 @@ img{
 }
 section{
     border:1px solid rgb(30, 172, 160);
-}
+}*/
 
 /*Texts*/
 h1,h2,h3,h4{
@@ -217,25 +217,6 @@ p:not(.header-sub,.card__description){
     display: block;
     font-weight: 700;
     color: #ffffff;
-}
-
-.nav{
-    margin: 0;
-    padding: 0;
-}
-.nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-.nav li {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
 }
 
 /*Cards : section destinations*/
@@ -396,6 +377,11 @@ button {
         font-size: 10pt; 
     }
 
+    
+    /*Header*/
+    .cover:not(.nav),.header {
+        height: 50vh;
+    }
     /*Cards : section destinations*/
     .card{
         padding:25px
