@@ -219,6 +219,25 @@ p:not(.header-sub,.card__description){
     color: #ffffff;
 }
 
+.nav{
+    margin: 0;
+    padding: 0;
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.nav li {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
 /*Cards : section destinations*/
 .card {
     grid-column: 1 / span 12 ;
@@ -278,13 +297,14 @@ p:not(.header-sub,.card__description){
     border-radius: 25px;
     color: #c84274;
 }
-input,label{
+.avis input,label{
     opacity: 0;
 }
 .avatar svg{
     height:120px; 
     width:120px;
 }
+
 
 /*Buttons*/
 button {
@@ -376,13 +396,13 @@ button {
         font-size: 10pt; 
     }
 
-    /*Cards*/
+    /*Cards : section destinations*/
     .card{
         padding:25px
     }
 
-    /*Slider*/
-    input {
+    /*Slider : section recommendations*/
+    .avis input {
         opacity: 0;
         width: 0;
         height: 0;
@@ -410,7 +430,7 @@ button {
         transition: opacity .6s;
         pointer-events: none;
     }
-    label {
+    .avis label {
         color: #E0E0E0;
         transition-duration: .6s;
         opacity: 1;
