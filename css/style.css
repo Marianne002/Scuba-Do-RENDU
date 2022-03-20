@@ -170,6 +170,40 @@ section{
     border:1px solid rgb(30, 172, 160);
 }
 
+/*Cards*/
+.card {
+    grid-column: 1 / span 12 ;
+    grid-row: 1;
+    border-radius: 25px;
+    padding:25px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+    color: #ffffff;
+}
+.card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+/* CARD BACKGROUNDS */
+.card-1 {
+    background-image: url('../images/indonesia.jpeg' );
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-2 {
+    background-image: url('../images/australia.jpeg' );
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-3 {
+    background-image: url('../images/caribbean.jpeg' );
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /*Slider*/
 .wrapper{
     display: flex;
@@ -201,6 +235,17 @@ input,label{
 .avatar svg{
     height:120px; 
     width:120px;
+}
+
+/*Buttons*/
+button {
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 2px solid #5f0b39;
+    background-color: #c84779;
+    color: #ffffff;
+    cursor: pointer;
 }
 
 /*Links*/
@@ -278,6 +323,11 @@ input,label{
         grid-row: 6;
     }
 
+    /*Cards*/
+    .card{
+        padding:25px
+    }
+
     /*Slider*/
     input {
         opacity: 0;
@@ -325,5 +375,10 @@ input,label{
     #i_3:checked ~ .controls label[for="i_3"],
     #i_4:checked ~ .controls label[for="i_4"]{
         color:#f8f8f8;
+    }
+
+    /*Text*/
+    body, input, button{
+        font-size: 10pt; 
     }
 }
