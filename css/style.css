@@ -170,6 +170,21 @@ section{
     border:1px solid rgb(30, 172, 160);
 }
 
+/*Texts*/
+h1,h2,h3,h4{
+    font-family: "fatfrank",sans-serif; 
+}
+h2{
+    color: #2a5d68;
+}
+p{
+    font-family: "century-gothic",sans-serif;
+    font-size:12px;
+}
+p:not(.header-sub,.card__description){
+    color:#cfcfce;
+}
+
 /*Cards*/
 .card {
     grid-column: 1 / span 12 ;
@@ -323,6 +338,11 @@ button {
         grid-row: 6;
     }
 
+    /*Text*/
+    body, input, button{
+        font-size: 10pt; 
+    }
+    
     /*Cards*/
     .card{
         padding:25px
@@ -375,10 +395,5 @@ button {
     #i_3:checked ~ .controls label[for="i_3"],
     #i_4:checked ~ .controls label[for="i_4"]{
         color:#f8f8f8;
-    }
-
-    /*Text*/
-    body, input, button{
-        font-size: 10pt; 
     }
 }
