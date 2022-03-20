@@ -171,6 +171,25 @@ section{
 }
 
 
+/*Links*/
+.footer p{
+    color: #4a4b4a;
+}
+.footer ul li{
+    list-style-type:none;
+}
+.footer ul li a{
+    text-decoration: none;
+}
+.footer ul > li > a> p{ 
+    margin-bottom: 5px;
+}
+.footer ul > li > a:hover > p,
+.footer ul > li > a.active > p{
+    color: #2a5d68;
+    font-size:small;
+}
+
 /*Responsive:*/
 /*Mobile version:*/
 @media screen and (max-width:576px){
